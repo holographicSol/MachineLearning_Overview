@@ -11,3 +11,7 @@ A custom pokemon training and validation data set has been provided for my impro
 
 Tensorflow version: 2.4
 Python version: 3.7
+
+Lesson: https://www.youtube.com/playlist?list=PLQY2H8rRoyvwWuPiWnuTDBHe7I0fMSsfO
+
+Lesson through machine_learning 0-13, while machine_learning 14-15 is applying what has been learned to create a new image classifier.
