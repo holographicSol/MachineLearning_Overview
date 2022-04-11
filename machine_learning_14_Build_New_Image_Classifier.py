@@ -64,7 +64,8 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dropout(0.5),
 
-    # 512 neuron hidden layer
+    # 512 neuron hidden layer (Note last layer int 2 equals new class count, do not exceed)
+    # Note: Last layer now equal to image class count 2.
     tf.keras.layers.Dense(512, activation='relu'),
     tf.keras.layers.Dense(2, activation='softmax')
 ])
@@ -74,7 +75,7 @@ model.summary()
 
 model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
-# # output --> loss, accuracy, validation loss, validation accuracy
+# Note: steps per epoch and validation steps now equal to image class count 2.
 history = model.fit(train_generator,
                     epochs=20,
                     steps_per_epoch=2,
