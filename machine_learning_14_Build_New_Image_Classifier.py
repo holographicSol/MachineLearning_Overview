@@ -7,7 +7,7 @@ from keras_preprocessing.image import ImageDataGenerator
 
 """
 
-Train then detect rock, paper and scissors.
+Train then detect foobar.
 
 
 """
