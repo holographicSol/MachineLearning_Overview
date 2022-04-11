@@ -1,3 +1,5 @@
+""" Now use the model created in step 14 to predict """
+
 import os
 import numpy as np
 import tensorflow as tf
